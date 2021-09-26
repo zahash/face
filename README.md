@@ -1,12 +1,18 @@
 # face
 
-> convert face images to face vectors using dlib
+> convert face images to encoding vectors
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A simple Python program that recognizes faces gives face encodings and bounding box coordinates as output
+A helper Python package that recognizes faces gives face encodings and bounding box coordinates as output. It uses the [face_recognition](https://github.com/ageitgey/face_recognition) package.
 
 ## Installation
+
+make sure you install cmake and build-essential before installing this package
+
+```sh
+sudo apt-get install cmake build-essential
+```
 
 pip install this repo.
 (Note: Incompatible with Python 2.x)
