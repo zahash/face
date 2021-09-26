@@ -11,7 +11,7 @@ ap.add_argument(
 )
 args = ap.parse_args()
 
-for fpath in args.filepaths:
+for fpath in set(args.filepaths):
     try:
         faces = recognize(fpath)
         for f in faces:

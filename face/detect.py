@@ -1,4 +1,5 @@
 from face_recognition import load_image_file, face_encodings, face_locations
+from os.path import abspath
 
 
 def recognize(img_fpath):
@@ -19,7 +20,7 @@ def recognize(img_fpath):
 
     faces = [
         {
-            "img_fpath": img_fpath,
+            "img_fpath": abspath(img_fpath),
             "bounding_box": bounding_box,
             "face_encoding": face_encoding.tolist(),
         }
